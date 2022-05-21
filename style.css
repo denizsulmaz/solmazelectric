@@ -604,10 +604,13 @@ footer .row .left{
     .row *{justify-content: center;}
     footer address{bottom: -35px;font-size: 12px;}
 
-    .modal-box{margin:10vh auto;height: 80vh;overflow: hidden;}
+    .modal-box{margin:25vh auto;height: 80vh;width: 75vw; overflow: hidden;}
     .modal-header h1{margin: 0;}
     .close-modal{margin-bottom: -20px;}
     .modal-header{padding: 20px 30px;}
-    .modal-body{padding: 10px;}
+    .modal-body{padding: 50px 10px;}
+    .modalSocial{transform: scale(1);margin-left: 0;width: 90%;}
+    .modal *{justify-content: center;text-align: center;}
+    .close-modal{margin-bottom: 10px;}
 
 }
