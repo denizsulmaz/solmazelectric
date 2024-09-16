@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="TR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/SolmazIcon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Hakkımızda | SOLMAZ Electric</title>
+    <style>
+      .about{
+        width: 50vw;
+        margin: 20vh auto;
+      }
+      .about h1{text-align: left;font-size: 40px;}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img id="solmazLogo" src="img/SolmazLogo.svg" alt="Solmaz Elektrik"></a>
+
+        <div>
+            <a href="about.html">Hakkımızda</a>
+            •
+            <a href="index.html#projects">Projeler</a>
+        </div>
+    </nav>
+    <!-- Modal -->
+        <div class="modal" id="modal-name">
+          <div class="modal-sandbox"></div>
+          <div class="modal-box">
+            <div class="modal-header">
+              <div class="close-modal">&#10006;</div> 
+              <h1>Bize Ulaşın</h1>
+            </div>
+            <div class="modal-body">
+              <p><a href="https://www.linkedin.com/company/solmazelektrik/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+              <p><a href="mailto:info@solmazlectric.com">info@solmazelectric.com</a></p>
+            </div>
+          </div>
+        </div>
+    <!-- --- -->
+    
+    <!-- --- -->
+   
+    <section class="about">
+      <h1>Hakkımızda</h1>
+      <p>
+        Solmaz Elektrik, 1995 yılında İstanbul'da kurulmuş olup, enerji ve elektrik sektöründe kaliteli ve güvenilir çözümler sunma misyonuyla hareket etmektedir. Kurulduğu günden bu yana, yenilikçi teknolojiye odaklanarak, sürdürülebilir enerji çözümlerinde lider konumuna gelmiştir. İstanbul'un kalbinde yer alan merkezimiz, Türkiye genelindeki müşterilerimize hızlı ve etkili hizmet sunmamız için stratejik bir avantaj sağlamaktadır. Müşteri memnuniyetini en ön planda tutarak, her projede yüksek kalite standartlarını ve iş güvenliğini sağlama prensibini benimsiyoruz.
+        <br><br>
+        Solmaz Elektrik olarak geniş bir hizmet yelpazesi sunmaktayız. Endüstriyel tesislerden, ticari binalara; konut projelerinden, altyapı ve enerji projelerine kadar geniş bir alanda faaliyet göstermekteyiz. Proje yönetiminde edindiğimiz bilgi ve tecrübeler ile, müşterilerimizin ihtiyaçlarına özel çözümler üreterek, en karmaşık projelerde bile güvenilirlik ve verimliliği ön planda tutuyoruz. Sektördeki teknolojik yenilikleri yakından takip ederek, modern ve çevre dostu enerji çözümlerini projelerimizde uygulamaktayız. Bu bağlamda akıllı bina sistemleri, enerji yönetim sistemleri ve yenilenebilir enerji projelerinde önemli atılımlar gerçekleştirmiş bulunmaktayız.
+        <br><br>
+        Şirket kültürümüz, insan odaklı bir yaklaşımı benimsemektedir. Çalışanlarımızın sürekli gelişimini desteklemek için düzenli eğitimler ve profesyonel gelişim fırsatları sunuyoruz. Takım ruhunu ve işbirliğini teşvik eden bir çalışma ortamı yaratarak, her bir çalışanın potansiyelini en üst düzeye çıkarmayı hedefliyoruz. Aynı zamanda, sosyal sorumluluk projeleri ile topluma değer katmak ve gelecek nesillere daha yaşanabilir bir dünya bırakmak için var gücümüzle çalışıyoruz. Solmaz Elektrik olarak, teknoloji ve insan arasında kurduğumuz köprüyü güçlendirerek, herkesin erişebileceği güvenli, verimli ve sürdürülebilir enerji çözümleri sunmaya devam ediyoruz.</p>
+    </section>
+
+
+
+
+      <footer id="footer">
+        <div class="row">
+          <div class="footerLogo">
+            <img src="img/SolmazFooterLogo.png" alt="Solmaz Elektirik Logo">
+          </div>
+          <div class="ftCol">
+            <li><a href="">Hakkımızda</a></li>
+            <li><a href="https://www.linkedin.com/company/solmazelektrik/" target="_blank" rel="noopener noreferrer">Kariyer</a></li>
+            <li><a href="https://www.linkedin.com/company/solmazelektrik/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </div>
+          <div class="ftCol">
+            <li>İstanbul, Türkiye</li>
+            <li>2024 © All right reserved</li>
+            <li>Assoc. Member of <a href="https://dsfist.com" target="_blank" rel="noopener noreferrer">DS FIST</a></li>
+          </div>
+        </div>
+      </footer>
+
+
+<script>
+    $(function(){
+  $('.carousel-item').eq(0).addClass('active');
+  var total = $('.carousel-item').length;
+  var current = 0;
+  $('#moveRight').on('click', function(){
+    var next=current;
+    current= current+1;
+    setSlide(next, current);
+  });
+  $('#moveLeft').on('click', function(){
+    var prev=current;
+    current = current- 1;
+    setSlide(prev, current);
+  });
+  function setSlide(prev, next){
+    var slide= current;
+    if(next>total-1){
+     slide=0;
+      current=0;
+    }
+    if(next<0){
+      slide=total - 1;
+      current=total - 1;
+    }
+           $('.carousel-item').eq(prev).removeClass('active');
+           $('.carousel-item').eq(slide).addClass('active');
+      setTimeout(function(){
+
+      },800);
+    
+
+    
+    console.log('current '+current);
+    console.log('prev '+prev);
+  }
+});
+
+// ----- MODAL
+$(".modal-trigger").click(function(e){
+  e.preventDefault();
+  dataModal = $(this).attr("data-modal");
+  $("#" + dataModal).css({"display":"block"});
+  // $("body").css({"overflow-y": "hidden"}); //Prevent double scrollbar.
+});
+
+$(".close-modal, .modal-sandbox").click(function(){
+  $(".modal").css({"display":"none"});
+  // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
+}); 
+
+// Function to change the navbar image
+document.addEventListener('DOMContentLoaded', function() {
+            // Function to change the navbar image
+            function changeNavbarImage() {
+                const logo = document.getElementById('solmazLogo');
+                const scrollAmount = window.scrollY;
+                const changeThreshold = 40; // 
+
+                if (scrollAmount > changeThreshold) {
+                    logo.src = 'img/SolmazIcon.svg'; 
+                } else {
+                    logo.src = 'img/SolmazLogo.svg';
+                }
+            }
+
+            // Add scroll event listener
+            window.addEventListener('scroll', changeNavbarImage);
+        });
+</script>
+</body>
+</html>
