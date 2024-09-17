@@ -28,13 +28,13 @@ nav div a{
     padding: 0 15px;
 }
 main{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%,rgba(0, 0, 0, 0.2) 100%), url(img/LandingPhoto.webp);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%,rgba(0, 0, 0, 0.601) 100%), url(img/IstanbulCity.webp);
     height: 100vh;
     overflow: hidden;
     display: block;
     background-attachment: fixed;
     background-size: 100%;
-    background-position: 50% 10%;
+    background-position: 10% 40%;
 }
 main h1{
     color: #ffffff;
@@ -589,13 +589,13 @@ footer .row{
     nav div a{font-size: 16px;padding: 0 7px;}
     /* --main */
     main{
-      background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.041) 0%,rgba(0, 0, 0, 0.8) 100%), url(img/LandingPhoto.webp);
+      background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.249) 0%,rgba(0, 0, 0, 0.966) 100%), url(img/IstanbulCity.webp);
       height: 60vh;
       overflow: hidden;
       display: block;
       background-attachment: fixed;
       background-repeat: no-repeat;
-      background-size: 230%;
+      background-size: 200%;
       background-position: center, top;
   }
   main h1{
@@ -611,7 +611,7 @@ footer .row{
     text-align: right;
   }
   .mainLeft{
-    top: 28vh;
+    top: 33vh;
     left: 7vw;
     width: 80%;
     position: relative;
